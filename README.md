@@ -27,7 +27,7 @@ A simple chatbot built with React, powered by the Gemini API, and styled with Ta
 1. **Clone the Repository** (if you have it in a Git repo, or skip if you’re working locally):
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/CodeGeniusDev/codegeniuschat.git
    cd gemini-chatbot
    ```
 
