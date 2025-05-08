@@ -1,141 +1,59 @@
-# CodeGeniusBot
+# GeniusX – Personal Portfolio + AI Agent by CodeGenius.Dev
 
-A simple chatbot built with React, powered by the Gemini API, and styled with Tailwind CSS. This project, developed by CodeGenius.Dev, allows users to interact with an AI chatbot for conversational responses. The app is live at [https://geniusbot-three.vercel.app/](https://geniusbot-three.vercel.app/).
+**GeniusX** is a sleek, professional web app crafted by [CodeGenius.Dev](https://github.com/CodeGeniusDev). It showcases Abdullah Abbad’s full-stack development skills, top projects, and includes an AI-powered assistant to help users explore content and get coding help.
 
-## Features
+🔗 Live Site: [https://geniusx.netlify.app](https://geniusx.netlify.app)
 
-- Real-time chat with the Gemini API (using the `gemini-1.5-flash` model).
-- Clean and responsive UI styled with Tailwind CSS.
-- Markdown support for chat responses using `react-markdown`.
-- Deployed on Vercel for easy access.
+---
 
-## Tech Stack
+## ✨ Features
 
-- **Frontend**: React
-- **Styling**: Tailwind CSS
-- **API**: Gemini API (`@google/generative-ai`)
-- **Markdown Rendering**: `react-markdown`
-- **Deployment**: Vercel
+- 🧑‍💻 **Developer Profile**: Learn about Abdullah Abbad, a skilled full-stack web developer and UI/UX designer.
+- 📁 **Project Showcase**: Explore hand-picked, real-world projects with live previews.
+- 🧠 **AI Assistant**: Engage with an intelligent chatbot agent that can guide users, answer technical questions, and explain project features.
+- 💡 **Modern UI/UX**: Built with a clean, responsive design using modern CSS and frontend techniques.
+- 🔐 **Fully Responsive**: Mobile-friendly layout with smooth navigation across devices.
 
-## Prerequisites
+---
 
-- Node.js (v16 or higher) and npm installed.
-- A Gemini API key from Google AI Studio.
+## 🛠 Tech Stack
 
-## Installation
+- **Frontend**: React.js, CSS3
+- **AI Integration**: Custom chatbot using OpenAI API (or similar)
+- **Deployment**: Netlify
+- **Design**: Figma (UI planning), Custom CSS
 
-1. **Clone the Repository** (if you have it in a Git repo, or skip if you’re working locally):
+---
 
-   ```bash
-   git clone https://github.com/CodeGeniusDev/codegeniuschat.git
-   cd gemini-chatbot
-   ```
+## 📸 Screenshots
 
-2. **Install Dependencies**:
+![alt text](image.png)
 
-   ```bash
-   npm install
-   ```
+---
 
-3. **Install Tailwind CSS and Dependencies**:
+## 📄 License
 
-   ```bash
-   npm install -D tailwindcss postcss autoprefixer
-   npx tailwindcss init -p
-   ```
+This project is licensed under the MIT License – feel free to use and build upon it with credit.
 
-4. **Configure Tailwind CSS**:
+---
 
-   - Update `tailwind.config.js`:
-     ```javascript
-     /** @type {import('tailwindcss').Config} */
-     module.exports = {
-       content: ["./src/**/*.{js,jsx,ts,tsx}"],
-       theme: {
-         extend: {},
-       },
-       plugins: [],
-     };
-     ```
-   - Update `src/index.css`:
-     ```css
-     @tailwind base;
-     @tailwind components;
-     @tailwind utilities;
-     ```
+## 🙋‍♂️ About the Creator
 
-5. **Set Up the Gemini API Key**:
-   - Replace the API key in `src/App.js` with your own:
-     ```javascript
-     const genAI = new GoogleGenerativeAI("YOUR_GEMINI_API_KEY");
-     ```
-   - **Note**: For production, move the API key to a backend server or use environment variables for security.
+**Abdullah Abbad**  
+📧 Email: codegenius.inc@gmail.com  
+🌐 Portfolio: [https://portfolio.triplealpha.blog](https://portfolio.triplealpha.blog)  
+🔗 LinkedIn: [linkedin.com/in/abdullah-abbad](https://www.linkedin.com/in/abdullah-abbad)  
+💼 GitHub: [https://github.com/CodeGeniusDev](https://github.com/CodeGeniusDev)
 
-## Usage
+---
 
-1. **Run the App Locally**:
+## 🤝 Contributing
 
-   ```bash
-   npm start
-   ```
+Want to contribute? Feel free to fork the repo, make enhancements, and submit a pull request!
 
-   This will start the app at `http://localhost:3000`.
+---
 
-2. **Interact with the Chatbot**:
-   - Type a message in the input field and press "Send" (or hit Enter).
-   - The chatbot will respond using the Gemini API.
+## 📬 Contact
 
-## Deployment
+For project collaborations or custom development services, get in touch at `codegenius.inc@gmail.com` or WhatsApp +92 329 1540015.
 
-The app is deployed on Vercel at [https://geniusbot-three.vercel.app/](https://geniusbot-three.vercel.app/). To deploy your own version:
-
-1. **Install the Vercel CLI**:
-
-   ```bash
-   npm install -g vercel
-   ```
-
-2. **Deploy to Vercel**:
-
-   ```bash
-   vercel
-   ```
-
-   - Follow the prompts:
-     - Log in with GitHub.
-     - Set up and deploy the project (`y`).
-     - Choose the scope (`code-genius` or your preferred scope).
-     - Link to existing project? (`n`).
-     - Project name: `codegeniusbot` (or your preferred name).
-     - Accept the default directory (`./`).
-
-3. **Access the Live App**:
-   - Vercel will provide a URL (e.g., `https://codegeniusbot.vercel.app`).
-
-## Security Notes
-
-- The Gemini API key is currently hardcoded in `src/App.js`, which is insecure for production. The key has been exposed in development and should be revoked after testing. Generate a new key in Google AI Studio.
-- For production, move the API key to a backend server (e.g., Node.js with Express) or use a secure client-side solution like Firebase with Vertex AI.
-- Store sensitive keys in environment variables on the backend, not in the client-side code.
-
-## Troubleshooting
-
-- **Tailwind CSS Not Working**:
-  - Ensure `tailwind.config.js` includes the correct `content` paths.
-  - Verify `index.css` has the Tailwind directives.
-  - Restart the development server (`npm start`) after making changes.
-- **Gemini API Errors**:
-  - **403 (Invalid Key)**: Revoke the exposed key and generate a new one.
-  - **429 (Rate Limit)**: Wait and retry if you’ve exceeded the free tier limits.
-  - **500 (Server Error)**: Retry after a delay—it’s a server-side issue.
-
-## Future Improvements
-
-- Add a backend server to securely handle API requests.
-- Implement a clear chat button to reset the conversation.
-- Add dark mode with a theme toggle.
-- Persist chat history in local storage.
-
-## License
-
-This project is for educational purposes and developed by CodeGenius.Dev. Contact `hafizabdullahabbad@gmail.com` for inquiries.

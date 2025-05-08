@@ -19,6 +19,11 @@ body {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: var(--black-color);
+  color: var(--background-color);
+}
+
 /* Animations */
 @keyframes fadeInDown {
   0% {

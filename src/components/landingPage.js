@@ -621,7 +621,7 @@ function MainPage() {
           ))}
         </div>
         <p className="text-sm text-center">
-          © 2025 CodeGenius.Dev — All rights reserved
+          © 2025 <a className="text-black font-bold hover:text-primary hover:underline transition-colors duration-300" href="https://portfolio.triplealpha.blog">CodeGenius.Dev</a> - All rights reserved
         </p>
       </footer>
     </main>
