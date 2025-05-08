@@ -451,14 +451,14 @@ function ChatBox({ onClose }) {
               ))}
             </div>
           ) : history.length === 0 ? (
-            <div className="history-empty text-center text-gray-500 text-sm sm:text-base md:text-lg animate-pulse">No conversations yet.</div>
+            <div className="history-empty text-center text-gray-500 text-sm sm:text-base md:text-sm">No conversations yet.</div>
           ) : (
             history.map((conversation) => (
               <div
                 key={conversation.id}
                 className="history-item bg-white p-2 sm:p-3 md:p-4 rounded-lg md:rounded-xl border border-gray-200 hover:border-black cursor-pointer flex justify-between items-center mb-2 sm:mb-3 transition-all duration-300 transform hover:scale-102 hover:shadow-md"
               >
-                <div className="history-message flex-1 text-sm sm:text-base md:text-lg text-gray-800 truncate" onClick={() => loadConversation(conversation)}>
+                <div className="history-message flex-1 text-sm sm:text-base md:text-sm text-gray-800 truncate" onClick={() => loadConversation(conversation)}>
                   {conversation.messages[0]?.content || "Empty conversation"}
                 </div>
                 <div className="history-actions flex gap-2 sm:gap-3 md:gap-3">
@@ -475,7 +475,7 @@ function ChatBox({ onClose }) {
                     <i className="fas fa-trash text-base sm:text-lg md:text-sm"></i>
                   </button>
                 </div>
-                <div className="history-timestamp text-xs sm:text-sm md:text-base text-gray-500 ml-1 sm:ml-2 md:ml-3">
+                <div className="history-timestamp text-xs sm:text-sm md:text-sm text-gray-500 ml-1 sm:ml-2 md:ml-3">
                   {getTimeDifference(conversation.timestamp)}
                 </div>
               </div>
