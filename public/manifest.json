@@ -1,25 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "GeniusX",
+  "name": "GeniusX by CodeGenius.Dev",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://avatars.githubusercontent.com/u/164690054?v=4",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://avatars.githubusercontent.com/u/164690054?v=4",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://avatars.githubusercontent.com/u/164690054?v=4",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#96887D",
+  "background_color": "#F4F4F0"
 }
